@@ -1,0 +1,30 @@
+# 首页
+[[main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+
+    [main.params]
+        icon = "home"
+        newTab = false
+
+# GitHub
+[[social]]
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/cola0908"
+
+    [social.params]
+        icon = "brand-github"
+        newTab = true
+
+# RSS
+[[social]]
+    identifier = "rss"
+    name = "RSS"
+    url = "/index.xml"
+
+    [social.params]
+        icon = "rss"
+        newTab = true

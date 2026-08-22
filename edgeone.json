@@ -1,0 +1,5 @@
+{
+  "hugoVersion": "0.165.0",
+  "buildCommand": "hugo --minify --cleanDestinationDir",
+  "outputDirectory": "public"
+}

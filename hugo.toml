@@ -41,6 +41,12 @@ hasCJKLanguage = true
         toggle = true
         default = "auto"
 
+    [params.footer]
+        icp = "京ICP备2026054033号-1"
+        icpLink = "https://beian.miit.gov.cn/"
+        publicSecurity = ""
+        publicSecurityLink = ""
+
     [params.comments]
         enabled = false
 

@@ -2,7 +2,7 @@
 
 我的个人博客代码库，使用 [Hugo](https://github.com/gohugoio/hugo) 与 [Stack 主题](https://github.com/CaiJimmy/hugo-theme-stack) 构建。
 
-部署在 Alibaba Cloud ESA（阿里云边缘安全加）上。
+部署在 Tencent Cloud EdgeOne（腾讯云 EdgeOne Page）上。
 
 ## 文章、页面编写流程
 

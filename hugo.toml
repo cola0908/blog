@@ -1,6 +1,6 @@
 baseURL = "https://cola0908.com/"
 locale = "zh-cn"
-title = "cola0908的笔记"
+title = "cola0908的学习记录"
 theme = "hugo-theme-stack"
 
 defaultContentLanguage = "zh"

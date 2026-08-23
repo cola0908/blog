@@ -9,13 +9,15 @@
     </section>
 
     <section class="powerby">
-        {{ with .Site.Params.footer.icp }}
-            <a href="{{ default "https://beian.miit.gov.cn/" $.Site.Params.footer.icpLink }}" target="_blank" rel="noopener noreferrer">{{ . }}</a><br />
-        {{ end }}
+        <div class="footer-records">
+            {{ with .Site.Params.footer.icp }}
+                <a href="{{ default "https://beian.miit.gov.cn/" $.Site.Params.footer.icpLink }}" target="_blank" rel="noopener noreferrer">{{ . }}</a><br />
+            {{ end }}
 
-        {{ with .Site.Params.footer.publicSecurity }}
-            <a href="{{ $.Site.Params.footer.publicSecurityLink }}" target="_blank" rel="noopener noreferrer">{{ . }}</a><br />
-        {{ end }}
+            {{ with .Site.Params.footer.publicSecurity }}
+                <a href="{{ $.Site.Params.footer.publicSecurityLink }}" target="_blank" rel="noopener noreferrer">{{ . }}</a><br />
+            {{ end }}
+        </div>
 
         {{ with .Site.Params.footer.customText }}
             {{ . | safeHTML }} <br />

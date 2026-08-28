@@ -43,7 +43,7 @@ hasCJKLanguage = true
 
     [params.footer]
         icp = "京ICP备2026054033号-1"
-        icpLink = "https://beian.miit.gov.cn/"
+        icpLink = "https://beian.miit.gov.cn"
         publicSecurity = ""
         publicSecurityLink = ""
 

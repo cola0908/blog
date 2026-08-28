@@ -11,7 +11,7 @@
     <section class="powerby">
         <div class="footer-records">
             {{ with .Site.Params.footer.icp }}
-                <a href="{{ default "https://beian.miit.gov.cn/" $.Site.Params.footer.icpLink }}" target="_blank" rel="noopener noreferrer">{{ . }}</a><br />
+                <a href="{{ default "https://beian.miit.gov.cn/" $.Site.Params.footer.icpLink }}" target="_blank" rel="noopener noreferrer"><strong>{{ . }}</strong></a><br />
             {{ end }}
 
             {{ with .Site.Params.footer.publicSecurity }}

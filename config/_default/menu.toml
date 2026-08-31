@@ -9,11 +9,23 @@
         icon = "home"
         newTab = false
 
+# 个人主页
+[[social]]
+    identifier = "homepage"
+    name = "个人主页"
+    url = "https://cola.host/"
+    weight = 1
+
+    [social.params]
+        icon = "home"
+        newTab = true
+
 # GitHub
 [[social]]
     identifier = "github"
     name = "GitHub"
     url = "https://github.com/cola0908"
+    weight = 2
 
     [social.params]
         icon = "brand-github"
@@ -24,6 +36,7 @@
     identifier = "rss"
     name = "RSS"
     url = "/index.xml"
+    weight = 3
 
     [social.params]
         icon = "rss"

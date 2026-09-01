@@ -45,5 +45,8 @@
 }
 
 .site-footer .footer-records {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
     margin-bottom: 0.45rem;
 }

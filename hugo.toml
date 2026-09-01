@@ -44,8 +44,8 @@ hasCJKLanguage = true
     [params.footer]
         icp = "京ICP备2026054033号-1"
         icpLink = "https://beian.miit.gov.cn"
-        publicSecurity = ""
-        publicSecurityLink = ""
+        publicSecurity = "京公网安备11010802050051号"
+        publicSecurityLink = "https://beian.mps.gov.cn/#/query/webSearch?code=11010802050051"
 
     [params.comments]
         enabled = false

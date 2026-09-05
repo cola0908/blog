@@ -1,31 +1,32 @@
 {{- $ThemeVersion := "4.0.3" -}}
+{{- $Generator := `<b><a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a></b>` -}}
+{{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
 <footer class="site-footer">
-    <section class="copyright">
-        &copy;
-        {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
-            {{ .Site.Params.footer.since }} -
-        {{ end }}
-        {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
-    </section>
-
-    <section class="powerby">
-        <div class="footer-records">
-            {{ with .Site.Params.footer.icp }}
-                <a href="{{ default "https://beian.miit.gov.cn/" $.Site.Params.footer.icpLink }}" target="_blank" rel="noopener noreferrer"><strong>{{ . }}</strong></a>
+    <div class="footer-heading">
+        <section class="copyright">
+            &copy;
+            {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
+                {{ .Site.Params.footer.since }} -
             {{ end }}
+            {{ now.Format "2006" }} {{ default .Site.Title .Site.Copyright }}
+        </section>
 
-            {{ with .Site.Params.footer.publicSecurity }}
-                <a href="{{ $.Site.Params.footer.publicSecurityLink }}" target="_blank" rel="noopener noreferrer"><strong>{{ . }}</strong></a>
-            {{ end }}
-        </div>
+        <section class="powerby">
+            使用 {{ $Generator | safeHTML }} 构建 · 主题 {{ $Theme | safeHTML }}
+        </section>
+    </div>
 
-        {{ with .Site.Params.footer.customText }}
-            {{ . | safeHTML }} <br />
+    <div class="footer-records">
+        {{ with .Site.Params.footer.icp }}
+            <a href="{{ default "https://beian.miit.gov.cn/" $.Site.Params.footer.icpLink }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>
         {{ end }}
 
-        {{- $Generator := `<b><a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a></b>` -}}
-        {{- $Theme := printf `<b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="%s">Stack</a></b>` $ThemeVersion -}}
+        {{ with .Site.Params.footer.publicSecurity }}
+            <a href="{{ $.Site.Params.footer.publicSecurityLink }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>
+        {{ end }}
+    </div>
 
-        使用 {{ $Generator | safeHTML }} 构建 · 主题 {{ $Theme | safeHTML }}
-    </section>
+    {{ with .Site.Params.footer.customText }}
+        <div class="footer-custom-text">{{ . | safeHTML }}</div>
+    {{ end }}
 </footer>
